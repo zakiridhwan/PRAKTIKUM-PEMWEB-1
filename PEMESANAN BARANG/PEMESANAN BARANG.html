@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods Order</title>
+</head>
+<body>
+        <table style="background-color: #F2F2F2; margin: 0 auto; padding: 10px;">
+            <tr>
+                <td>
+                    <table style="width: 16.5cm; text-align:center; padding: 5px; border: 2px solid black; padding: 10px;">
+                        <tr>
+                            <td>
+                                Home &emsp; | &emsp; Generate Link &emsp; | &emsp; Transaction History &emsp; | &emsp; Policy &emsp; | &emsp; Logout
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table>
+                        <tr>
+                            <td rowspan="10">
+                                <img src="photo.jpeg" alt="" style="width: 100px;">
+                                <br>
+                                <input id='browse' type='file' style='width:0px; margin-bottom: 200px;'>
+                                <button onclick='browse.click()' style="margin-right: 20px;">
+                                    Upload Picture
+                                </button>
+                            </td>
+                            <td><label for="title">Title Here</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="title" placeholder="MacBook Air E800" style="width: 55mm;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 50px;"><label for="des">Description</label></td>
+                            <td style="padding-bottom: 50px;">:</td>
+                            <td><textarea id="des" cols="30" rows="5" placeholder=
+                                "Year : 2009
+                                 Model :
+                                 Condition : Mint"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><label for="number">Account Number</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="number" placeholder="123-456-789-0" style="width: 55mm;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="bank">Bank</label></td>
+                            <td>:</td>
+                            <td>
+                                <select id="bank" style="width: 57mm;">
+                                    <option>HSBC</option>
+                                    <option>BRI</option>
+                                    <option>BCA</option>
+                                    <option>BNI</option>
+                                    <option>BSI</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="holder">Account Holder</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="holder" placeholder="Name Here" style="width: 55mm;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-bottom: 20px;"><label for="trans">Transaction</label></td>
+                            <td style="padding-bottom: 20px;">:</td>
+                            <td><input type="number" id="trans" placeholder="0" style="width: 7mm;">
+                            <br>
+                                *if the transaction is for 3 person, choose 3 from the drop-dows list
+                            </td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" colspan="2"></td>
+                            <td><input type="checkbox" id="mophone"><label for="mophone" style="color: #088A08;">Send to Mobile Phone</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="semail"><label for="semail" style="color: #088A08;">Send to Email</label></td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Send to Mobile Phone</label></td>
+                            <td>:</td>
+                            <td><input type="text" id="phone" placeholder="089711223344,089251524124" style="width: 55mm;"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Send to Email</label></td>
+                            <td>:</td>
+                            <td><input type="email" id="email" placeholder="comengs@sotan.ac.id, comengs@gmail.com" style="width: 55mm;"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+</body>
+</html>
